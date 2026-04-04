@@ -1,4 +1,6 @@
-# ApprenticeVR: VRSrc Edition
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/50136187-bbe5-420c-aefa-797618dcd71e" width="512" height="768">
+</p>
 
 ApprenticeVR: VRSrc Edition is a modern, cross-platform desktop application built with Electron, React, and TypeScript, designed for managing and sideloading content onto Meta Quest devices. It aims to provide a user-friendly and feature-rich alternative to existing sideloading tools.
 
