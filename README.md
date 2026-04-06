@@ -6,9 +6,9 @@ ApprenticeVR: VRSrc Edition is a modern, cross-platform desktop application buil
 
 > ## **Fork note:** This fork contains bug fixes, performance improvements, and a major build size reduction. See [Changelog](#changelog) below.
 
-## Downloads (v2.1.0)
-> STEP 1: Choose the correct file for your operating system.
 
+# STEP 1: Choose the correct file for your operating system.
+## Downloads (v2.1.0)
 | File | Platform | Size |
 |------|----------|------|
 | [apprenticevr-2.1.0-arm64.dmg](https://github.com/mula-bb/apprenticeVrSrc/releases/download/v2.1.0/apprenticevr-2.1.0-arm64.dmg) | macOS Apple Silicon (M1–M5) | 123 MB |
@@ -20,8 +20,8 @@ ApprenticeVR: VRSrc Edition is a modern, cross-platform desktop application buil
 | [apprenticevr-2.1.0-amd64.deb](https://github.com/mula-bb/apprenticeVrSrc/releases/download/v2.1.0/apprenticevr-2.1.0-amd64.deb) | Debian/Ubuntu x64 | 92 MB |
 | [apprenticevr-2.1.0-arm64.deb](https://github.com/mula-bb/apprenticeVrSrc/releases/download/v2.1.0/apprenticevr-2.1.0-arm64.deb) | Debian/Ubuntu arm64 | 87 MB |
 
-## Server Configuration (Required on First Run)
-> STEP 2:
+
+# STEP 2: Server Configuration (Required on First Run)
 You must provide your own `ServerInfo.json` configuration file.
 
 On first launch, the app will show a dialog with the location of the config file. You can also create it manually:
@@ -41,7 +41,13 @@ Create or edit the file with the following format:
 **IMPORTANT:** The `ServerInfo.json` file **must** use Linux/LF line endings (`\n`), **not** Windows/CRLF line endings (`\r\n`). This applies to **all platforms** (Windows, macOS, and Linux). Most modern text editors (VS Code, Notepad++, Sublime Text) can set line endings — make sure it is set to `LF` before saving. If the app fails to read your credentials, incorrect line endings are the most common cause.
 
 
-> STEP 3 (FINAL STEP): Restart the app. If credentials change in the future, just update this file — no rebuild needed.
+# STEP 3 (FINAL STEP): Restart the app. If credentials change in the future, just update this file — no rebuild needed.
+
+## macOS Note:
+Since the app is not code-signed with an Apple Developer certificate, you may need to run `xattr -c` on the .app after extracting from the DMG:
+```
+xattr -c /Applications/ApprenticeVR\ VRSrc\ Edition.app
+```
 -
 -
 -
